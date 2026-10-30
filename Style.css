@@ -33,11 +33,11 @@
 /* 1.0 General Styles */
 * {
     box-sizing: border-box;
-
     /* it is for to make the boxes type to be used in portfolio */
 }
 
-html {
+html {                         /*i have written this code by myself and this jibberish is the proof that yes i write comments */
+    
     scroll-behavior: smooth;
 }
 
@@ -69,7 +69,7 @@ body {
     background-size: 35px 35px;
 }
 
-
+                                                                        /* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhfffffffffffff*/
 .wrap {
     max-width: 860px;
     /* maximum width of the portfolio */
@@ -85,9 +85,9 @@ a {
     color: inherit;
 }
 
-:focus-visible {
-    outline: 3px solid var(--margin);
-    outline-offset: 3px;
+:focus-visible {                            
+    outline: 3px solid var(--margin);       /* it is for the outline when they are interacted with the keyboard */
+    outline-offset: 1px;                        /* it is for the outline when they are interacted with the keyboard */
 }
 
 nav {
@@ -155,4 +155,34 @@ nav a:hover {
 nav a {
     margin: 0 10px;
     /* add some margin to the left and right of each link */
+}
+
+#boy {
+    padding: 4rem 0 3rem;
+}
+
+#boy h1{
+    margin: 0 auto;
+    font-family: var(--display);
+    font-weight:800;
+    font-size:clamp(3.2rem , 20 vw , 8rem)
+    line-height: 0.95;
+    letter-spacing:-0.04em;
+}
+section{
+    padding: 2.5rem 0;
+
+}
+
+h2{
+    font-size:1.9rem;
+    font-family: var(--display);
+    font-weight:600;
+    margin:0 0 1.25rem ;
+    letter-spacing: -0.02;
+}
+
+p{
+    margin:0 0 1 rem ;
+    max-width:62ch;
 }
