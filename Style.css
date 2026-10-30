@@ -1,0 +1,158 @@
+:root {
+    /* Root is sort of a manaul library i am using to store general values to be used in the portfolio further */
+
+    --paper: #f5f7f2;
+    /* background TYPE */
+
+    --grid: #d3deea;
+    /* graph lines in background  */
+
+    --ink: #14213d;
+    /*  main text color for the font I have used in the portfolio  */
+
+    --muted: #4f5b72;
+    /* colour and texture for smaller texts */
+
+    --margin: #e4572e;
+    /* it is colour for the appearance of tags when they become interactive when i will ude hover */
+
+    --mark: #ffd84d;
+    /* it is the colour mark on my name " priyanshu " as heading */
+
+    --card: #ffffff;
+    /* it is the color for the floating boxes i used to store li values */
+
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    /* it is font for teh headings i have written in html */
+
+    --body: "Newsreader", Georgia, serif;
+    /* it is fonts for the <p> tag */
+}
+
+
+/* 1.0 General Styles */
+* {
+    box-sizing: border-box;
+
+    /* it is for to make the boxes type to be used in portfolio */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    /* removing the default line spaces by browsers */
+
+    font-family: var(--body);
+    /* taking font style for the portfolio from the root library */
+
+    font-size: 1.15rem;
+    /*font size for the body text in the portfolio */
+
+    line-height: 1.75;
+    /* line height for the body text in the portfolio */
+
+    color: var(--ink);
+    /* font colour */
+
+    background-color: var(--paper);
+    /* background colour for the portfolio defined  in --paper tag */
+
+    background-image:
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid)1px, transparent 1px);
+    /* graph lines in the background of the portfolio defined in --grid tag */
+
+    background-size: 35px 35px;
+}
+
+
+.wrap {
+    max-width: 860px;
+    /* maximum width of the portfolio */
+
+    margin: 0 auto;
+    /* it is for the centering the portfolio in the middle of the page */
+
+    padding: 0 1.5rem 0 clamp(36px, 10vw, 120px);
+
+}
+
+a {
+    color: inherit;
+}
+
+:focus-visible {
+    outline: 3px solid var(--margin);
+    outline-offset: 3px;
+}
+
+nav {
+    font-family: var(--display);
+    /* ye wala as defined in the root library */
+
+    font-size: 1rem;
+    /* font size */
+
+    font-weight: 500;
+    /* font size and weight */
+
+    padding: 1.25rem 0;
+    /* it is for the space between the buttons on top of the page */
+}
+
+nav ul {
+    display: flex;
+    /* it is for the horizontal alignment of the nav bar in the portfolio */
+
+    gap: 1.25rem;
+    /* it is for the gap between the nav bar links in the portfolio */
+
+    flex-wrap: wrap;
+    /* if the screen then the buttons will come in next line */
+
+    margin: 0;
+    /* top and bottom margin is 0 and left and right margin is auto */
+    /* it is for the space between the buttons on top of the page */
+
+    padding: 0;
+    /* removes the default padding space of the nav bar */
+
+    list-style: none;
+    /* removes the bullet points */
+}
+
+/*nav a {
+    text-decoration: none;
+    /* removes the underline from the nav bar links in the portfolio */
+
+/*color: var(--muted);
+    /* it is for the colour of the nav bar links in the portfolio */
+
+/*nav a:hover {
+    color: var(--margin);
+    /* it is for the colour of the nav bar links in the portfolio when hovered */
+
+
+/* i will skip the underline when hovered come on bhai bina underine ke cool lag raha hai   */
+nav a {
+    text-decoration: none;
+    color: #1a2b3c;
+    display: inline-block;
+    /* needed so the transform works on links */
+    transition: transform 0.3s ease;
+}
+
+nav a:hover {
+    transform: scale(1.5);
+    color: var(--margin);
+    /* change color on hover */
+}
+
+nav a {
+    margin: 0 10px;
+    /* add some margin to the left and right of each link */
+}
