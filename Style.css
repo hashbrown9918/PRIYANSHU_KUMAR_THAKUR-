@@ -166,7 +166,7 @@ nav a {
     font-family: var(--display);
     font-weight:800;
     font-size:clamp(3.2rem , 20 vw , 8rem)
-    line-height: 0.95;
+    line-height 0.95;
     letter-spacing:-0.04em;
 }
 section{
